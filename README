@@ -1,0 +1,24 @@
+Compilation:
+-------------
+To compile smallsh, use the following command:
+
+    gcc -o smallsh smallsh.c -std=gnu99 -Wall -g
+
+Execution:
+-------------
+To execute the shell, run:
+
+    ./smallsh
+    
+To execute test script, run:
+
+    ./p3testscript-1 2>&1
+
+Description:
+-------------
+This shell program (smallsh) supports a subset of bash commands including:
+- Custom built-in commands: exit, cd, and status
+- Input/output redirection using < and >
+- Foreground and background execution with & indicator
+- Signal handling for SIGINT (Ctrl+C) and SIGTSTP (Ctrl+Z)
+- Foreground-only mode toggle using SIGTSTP
